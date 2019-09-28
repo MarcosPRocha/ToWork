@@ -68,16 +68,16 @@
                   MR
                 </a>
                 <div class="hidden-lg hidden-md">
-                  <a class="item-drop dropdown-item texto-cor-branca"  href="" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
-                  <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Torne-se Instrutor</a>
+                  <a class="item-drop dropdown-item texto-cor-branca"  href="home_instrutor.html" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
+                  <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Mudar home para aprendiz</a>
                   <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Sair</a>
                 </div>
                 <div class="dropdown-menu menu-drop tamanho-dropdown" aria-labelledby="navbarDropdown">
                   <h4 class="texto-centro">Minha conta</h4>
                  
                   <h6 class="col-md-9">Matheus Robert</h6>
-                  <a class="item-drop dropdown-item"  href="" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
-                  <a class="item-drop dropdown-item" href="" data-toggle="modal" data-target=".cadastro_instrutor">Torne-se Instrutor</a>
+                  <a class="item-drop dropdown-item"  href="home_instrutor.html" >Meu Perfil</a>
+                  <a class="item-drop dropdown-item" href="">Mudar home para aprendiz</a>
                   <a class="item-drop dropdown-item" href="index.html" >Sair</a>
                 
                 </div>
@@ -116,73 +116,31 @@
     </ul>-->
   
     <ul class="latul tamanho-letra">
-      <li class="latli"><a  href="home_info.html" id="pagina_info">Informática</a></li>
-      <li class="latli"><a href="#news">Eletrônica</a></li>
-      <li class="latli"><a class="active" href="#contact">Ensino Médio</a></li>
-      <li class="latli"><a href="#about">Esportes</a></li>
-      <li class="latli"><a href="#about">Saúde</a></li>
-      <li class="latli"><a href="#about">Jogos</a></li>
-      <li class="latli"><a href="#about">Bolsa de valores</a></li>
-      <li class="latli"  style="border-bottom: 1px solid black;"><a href="home_redacao.html">Redação Enem</a></li>
+      <li class="latli"><a  href="home_info.html" id="pagina_info">Atividades realizadas</a></li>
+      <li class="latli"><a href="home_instrutor_meustrabalhos.html">Meus trabalhos</a></li>
+      <li class="latli"><a class="active" href="home_instrutor_perguntas.html">Perguntas recebidas</a></li>     
       <li class="latli"><a  href="home_info.html" id="pagina_info">Ranking</a></li>
-      <li class="latli"><a  href="home_info.html" id="pagina_info">Histórico de perguntas</a></li>
     </ul>
           <div class="div-formulario">
-                <form id="form_pergunta" action="/add_instrutor" method="POST" >
-                  <h3 class="texto-centro texto-cor-pergunta">Faça sua pergunta</h3>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Pergunta:</label>
-                        <textarea type="text" style="resize: none;" name="usuario" class="form-control" placeholder="Digite a sua pergunta"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Escolaridade: </label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Estudante</option>
-                          <option>Formado</option>
-                          <option>Estudante e formado </option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Assunto:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Fisíca</option>
-                          <option>Matemática</option>
-                          <option>Português</option>
-                          <option>Inglês</option>
-                          <option>Filosofia</option>
-                          <option>Sociologia</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Tempo máximo:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Hoje</option>
-                          <option>2 Dias</option>
-                          <option>1 Semana</option>
-                          <option>Indefinido</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Valor (em reais):</label>
-                        <input type="number" name="senha" class="form-control" placeholder="Digite o valor (apenas números)" >
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Forma de pagamento:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Cartão</option>
-                          <option>Boleto</option>
-                          <option>Deposíto</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                          
-                         <button type="button"><i class="fa fa-paperclip col-md-1 font-anexo" style="margin-right: 0%;"></i></button>
-                        <input type="text" name="senha" style="height:30px; " class=" col-md-10 " placeholder="C:\\Downloads\anexo.pdf" >
-                      </div>
-                     
-                      <button style="width: 50%;margin-left: 25%;margin-bottom: 2%;margin-top: 3%;" type="submit" class="btn btn-primary">Perguntar</button>
-                    </form>
-       </div>
+            <div class="col-md-12"  >
+              <h4>Pergunta:</h4>
+                 <p class="form-control"> Função mysqli_fetch_array do php não encontra o banco e preciso pegar os dados do banco de dados urgentemente.</p>
+                 <h4>Resposta:</h4>
+                 <textarea class="form-control" style="resize: none;height: 250px;margin-bottom: 2%;" ></textarea>
+                 <div class="form-group">
+                    <h4>Anexo recebido:</h4>
+                    <button type="button"><i class="fa fa-download font-anexo" style="font-size:24px;margin-right:0%;"></i></button>
+                    <input type="text" name="senha" style="height:32px; " class=" col-md-10 " placeholder="cadastro_produtos.php" >
+                  </div>
+                  <div class="form-group">
+                    <h4>Enviar anexo:</h4>
+                    <button type="button"><i class="fa fa-paperclip col-md-1 font-anexo" style="margin-right: 0%;"></i></button>
+                    <input type="text" name="senha" style="height:30px; " class=" col-md-10 " placeholder="C:\\Downloads\anexo.pdf" >
+                  </div>
+                  <button class="btn btn-primary" style="float: right;margin-bottom: 1%;width: 30%;">Enviar</button>
+            </div>
+              
+        </div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

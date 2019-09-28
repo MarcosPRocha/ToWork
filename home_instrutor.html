@@ -68,16 +68,16 @@
                   MR
                 </a>
                 <div class="hidden-lg hidden-md">
-                  <a class="item-drop dropdown-item texto-cor-branca"  href="" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
-                  <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Torne-se Instrutor</a>
+                  <a class="item-drop dropdown-item texto-cor-branca"  href="home_instrutor.html" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
+                  <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Mudar home para aprendiz</a>
                   <a class="item-drop dropdown-item texto-cor-branca" href="" data-toggle="modal" data-target=".cadastro_instrutor">Sair</a>
                 </div>
                 <div class="dropdown-menu menu-drop tamanho-dropdown" aria-labelledby="navbarDropdown">
                   <h4 class="texto-centro">Minha conta</h4>
                  
                   <h6 class="col-md-9">Matheus Robert</h6>
-                  <a class="item-drop dropdown-item"  href="" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
-                  <a class="item-drop dropdown-item" href="" data-toggle="modal" data-target=".cadastro_instrutor">Torne-se Instrutor</a>
+                  <a class="item-drop dropdown-item"  href="home_instrutor.html" >Meu Perfil</a>
+                  <a class="item-drop dropdown-item" href="">Mudar home para aprendiz</a>
                   <a class="item-drop dropdown-item" href="index.html" >Sair</a>
                 
                 </div>
@@ -116,73 +116,46 @@
     </ul>-->
   
     <ul class="latul tamanho-letra">
-      <li class="latli"><a  href="home_info.html" id="pagina_info">Informática</a></li>
-      <li class="latli"><a href="#news">Eletrônica</a></li>
-      <li class="latli"><a class="active" href="#contact">Ensino Médio</a></li>
-      <li class="latli"><a href="#about">Esportes</a></li>
-      <li class="latli"><a href="#about">Saúde</a></li>
-      <li class="latli"><a href="#about">Jogos</a></li>
-      <li class="latli"><a href="#about">Bolsa de valores</a></li>
-      <li class="latli"  style="border-bottom: 1px solid black;"><a href="home_redacao.html">Redação Enem</a></li>
+      <li class="latli"><a  href="home_info.html" id="pagina_info">Atividades realizadas</a></li>
+      <li class="latli"><a href="home_instrutor_meustrabalhos.html">Meus trabalhos</a></li>
+      <li class="latli"><a href="home_instrutor_perguntas.html">Perguntas recebidas</a></li>     
       <li class="latli"><a  href="home_info.html" id="pagina_info">Ranking</a></li>
-      <li class="latli"><a  href="home_info.html" id="pagina_info">Histórico de perguntas</a></li>
     </ul>
           <div class="div-formulario">
-                <form id="form_pergunta" action="/add_instrutor" method="POST" >
-                  <h3 class="texto-centro texto-cor-pergunta">Faça sua pergunta</h3>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Pergunta:</label>
-                        <textarea type="text" style="resize: none;" name="usuario" class="form-control" placeholder="Digite a sua pergunta"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Escolaridade: </label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Estudante</option>
-                          <option>Formado</option>
-                          <option>Estudante e formado </option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Assunto:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Fisíca</option>
-                          <option>Matemática</option>
-                          <option>Português</option>
-                          <option>Inglês</option>
-                          <option>Filosofia</option>
-                          <option>Sociologia</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Tempo máximo:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Hoje</option>
-                          <option>2 Dias</option>
-                          <option>1 Semana</option>
-                          <option>Indefinido</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Valor (em reais):</label>
-                        <input type="number" name="senha" class="form-control" placeholder="Digite o valor (apenas números)" >
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Forma de pagamento:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Cartão</option>
-                          <option>Boleto</option>
-                          <option>Deposíto</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                          
-                         <button type="button"><i class="fa fa-paperclip col-md-1 font-anexo" style="margin-right: 0%;"></i></button>
-                        <input type="text" name="senha" style="height:30px; " class=" col-md-10 " placeholder="C:\\Downloads\anexo.pdf" >
-                      </div>
-                     
-                      <button style="width: 50%;margin-left: 25%;margin-bottom: 2%;margin-top: 3%;" type="submit" class="btn btn-primary">Perguntar</button>
-                    </form>
-       </div>
+            <div class="col-md-12" >
+                <h3 class="texto-centro">Meu perfil</h3>
+                <img class="col-md-3" src="imagens/mmdc.jpg" style="margin-top: -4%;">
+                <div class="col-md-3">
+                  <h4>Usuario: Matheus Robert</h4>
+                  <h4>Email: matheus@gmail.com</h4>
+                  <h4>Perfil: Instrutor</h4>
+                  <h4>Verificado: Sim</h4>
+                  <h4>Escolaridade: Formado</h4>
+                </div>
+                <div class="col-md-6">
+                  <div class="col-md-6">
+                    <img src="imagens/programacao.jpg" width="50" height="50">
+                    <h4>Programação em Web</h4>
+                  </div>
+                  <div class="col-md-6">
+                      <img src="imagens/mmdc.jpg" width="50" height="50">
+                      <h4>Manutenção de computadores</h4>
+                  </div>
+                </div>
+                <div class="col-md-12" style="margin-top: 2%;">
+                  <h4 class="col-md-12" style="margin: 0px;">Pontos: 2510</h4>
+                  <h4 class="col-md-12" style="margin: 0px;">Classificação:<img src="imagens/5star.png" width="100" height="70"></h4>
+                  <h4 class="col-md-9">Saldo: R$ 120,00</h4>
+                  <button class="btn btn-primary">Informações de recebimento</button>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="col-md-12" style="height: 100px;resize: none;margin-bottom: 5%;margin-top: 5%;">E eu, que estou de bem com a vida, creio que aqueles que mais entendem de felicidade são as borboletas e as bolhas
+de sabão e tudo que entre os homens se lhes assemelhem.
+
+-Friedrich Nietzsche</textarea>
+                </div>
+              
+          </div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

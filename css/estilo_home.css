@@ -4,6 +4,7 @@
 
 html,body,.capa{
 	height: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -14,9 +15,62 @@ body {
 	background-attachment: fixed;
 	
 	*/
-	background:#0DEDF4;
-					
+	margin: 0;
+	background:white;		
 	font-family: Helvetica,Arial,sans-serif;
+}
+
+
+
+.latul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.latli a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.latli a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.latli a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.navul {
+ 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navli {
+  float: left;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navli a:hover {
+  background-color: #111;
 }
 
 /* Lista assuntos */
@@ -59,8 +113,25 @@ nav.navbar-transparente{
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: #9bf0e1;
 }
+.bg-nav{
+	background-color: #380B61;
+}
 
-
+/*==================================== Formulários =======================================*/
+.div-formulario{
+	margin-left:25%;
+	padding:1px 16px;
+	height:92.1%;
+	background-color: white;
+	overflow-y: hidden;
+}
+.div-formulario-redacao{
+	margin-left:25%;
+	padding:1px 16px;
+	height:92.1%;
+	background-color: white;
+	overflow-y: scroll;
+}
 /* -- Imagem de capa -- */
 .capa{
 	display: table;
@@ -111,6 +182,22 @@ h3{
 .texto-cor-branca{
 	color: white;
 }
+.texto-cor-pergunta{
+	color: #DBA901;
+}
+.tamanho-letra{
+	font-size: 23px;
+}
+.tamanho-form-menu{
+	font-size: 18px;
+}
+/* ======================== Margem Home ========================== */
+.margem-home{
+	margin-right: -20%;
+}
+.margem-home-logo{
+	margin-left: -135%;
+}
 /* ======================== Caixas assinaturas =================== */
 .box-assinatura{
 	background: white;
@@ -132,5 +219,78 @@ h3{
 .background-cinza{
 	background: gray;
 }
+/*======================== Bordas ============================*/
+.borda-perfil{
+	border: 5px solid #848484;
+	border-radius: 250px;
+}
+/*======================== Largura ============================*/
+.tamanho-dropdown{
+	width: 250px;
+}
+/* ======================= Fonts Icons ========================*/
+.font-sino{
+	font-size: 36px;
+}
+.font-anexo{
+	font-size: 24px;
+}
 /* Media queries */
 /* xs < 768 */
+@media screen and (max-width: 767px){
+	.navbar-inverse{
+		background-color: gray;
+	}
+	.tamanho-dropdown{
+		width: 100px;
+	}
+	.borda-perfil{
+		width: 16%;
+		margin-left: 2%;
+	}
+	.font-sino{
+		font-size: 24px;
+	}
+	.font-anexo{
+		width: 10px;
+		font-size: 15px;
+	}
+	.div-formulario{
+		overflow-y: scroll;
+	}
+	.latli{
+		font-size: 12px;
+	}
+}
+/* sm */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.navbar-inverse{
+		background-color: gray;
+	}
+	.tamanho-dropdown{
+		width: 100px;
+	}
+	.margem-home{
+		margin-right: -5%;
+	}
+	.margem-home-logo{
+		margin-left: -20%;
+	}
+	.div-formulario{
+		overflow-y: scroll;
+	}
+	
+}
+/* md */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.margem-home{
+		margin-right: -5%;
+	}
+	.margem-home-logo{
+		margin-left: -20%;
+	}
+}
+/* lg */
+@media screen and (min-width: 1200px){
+	 
+}

@@ -78,7 +78,7 @@
                   <h6 class="col-md-9">Matheus Robert</h6>
                   <a class="item-drop dropdown-item"  href="" data-toggle="modal" data-target=".cadastro">Meu Perfil</a>
                   <a class="item-drop dropdown-item" href="" data-toggle="modal" data-target=".cadastro_instrutor">Torne-se Instrutor</a>
-                  <a class="item-drop dropdown-item" href="index.html" >Sair</a>
+                   <a class="item-drop dropdown-item" href="index.html" >Sair</a>
                 
                 </div>
             </li>
@@ -87,52 +87,28 @@
 
       </div> <!-- /container -->
     </nav><!-- /nav -->
-  	<!--
-  				<ul class="navul">
-              <li class="navli">
-              <a href="index.html">           
-            <span class="texto-cor-branca" style="font-size: 50px;">ToWork</span>
-          </a>
-        </li>
-        <li class="navli nav-item dropdown" style="float: right;margin-top: 0.5%;">
-          
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 5px solid red;border-radius: 250px;">
-                  MR
-                </a>
-                <div class="dropdown-menu menu-drop dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 250px;">
-                  <h4 class="texto-centro">Minha conta</h4>
-                  <img class="col-md-3" src="imagens\galaxia_mobile.jpg">
-                  <h6 class="col-md-9">Matheus Robert</h6>
-                  <a class="item-drop dropdown-item"  href="" >Meu Perfil</a>
-                  <a class="item-drop dropdown-item" href="" >Torne-se Instrutor</a>
-                  <a class="item-drop dropdown-item" href="" >Sair</a>
-                
-                </div>
-               
-      </li>
-    <li class="navli" style="float: right;margin-top: 0.5%;"><a href="" data-toggle="modal" data-target=".cadastro"><i class="fa fa-bell-o" style="font-size:36px"></i></a></li>
-      
-      
-    </ul>-->
-  
     <ul class="latul tamanho-letra">
       <li class="latli"><a  href="home_info.html" id="pagina_info">Informática</a></li>
       <li class="latli"><a href="#news">Eletrônica</a></li>
-      <li class="latli"><a class="active" href="#contact">Ensino Médio</a></li>
+      <li class="latli"><a href="home.html">Ensino Médio</a></li>
       <li class="latli"><a href="#about">Esportes</a></li>
       <li class="latli"><a href="#about">Saúde</a></li>
       <li class="latli"><a href="#about">Jogos</a></li>
       <li class="latli"><a href="#about">Bolsa de valores</a></li>
-      <li class="latli"  style="border-bottom: 1px solid black;"><a href="home_redacao.html">Redação Enem</a></li>
+      <li class="latli"  style="border-bottom: 1px solid black;"><a class="active" href="home_redacao.html">Redação Enem</a></li>
       <li class="latli"><a  href="home_info.html" id="pagina_info">Ranking</a></li>
       <li class="latli"><a  href="home_info.html" id="pagina_info">Histórico de perguntas</a></li>
     </ul>
-          <div class="div-formulario">
+          <div class="div-formulario-redacao">
                 <form id="form_pergunta" action="/add_instrutor" method="POST" >
-                  <h3 class="texto-centro texto-cor-pergunta">Faça sua pergunta</h3>
+                  <h3 class="texto-centro texto-cor-pergunta">Avalie a sua redação </h3>
+                      <div class="form-group ">
+                        <label class="col-form-label tamanho-form-menu">Tema</label>
+                        <input type="text" name="tema" class="form-control" placeholder="Digite o tema da redação" >
+                      </div>
                       <div class="form-group">
                         <label class="col-form-label tamanho-form-menu">Pergunta:</label>
-                        <textarea type="text" style="resize: none;" name="usuario" class="form-control" placeholder="Digite a sua pergunta"></textarea>
+                        <textarea type="text" style="height: 450px;" name="usuario" class="form-control" placeholder="Digite a sua redação"></textarea>
                       </div>
                       <div class="form-group">
                         <label class="col-form-label tamanho-form-menu">Escolaridade: </label>
@@ -140,17 +116,6 @@
                           <option>Estudante</option>
                           <option>Formado</option>
                           <option>Estudante e formado </option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-form-label tamanho-form-menu">Assunto:</label>
-                        <select class="form-control" name="escolaridade" id="exampleFormControlSelect1">
-                          <option>Fisíca</option>
-                          <option>Matemática</option>
-                          <option>Português</option>
-                          <option>Inglês</option>
-                          <option>Filosofia</option>
-                          <option>Sociologia</option>
                         </select>
                       </div>
                       <div class="form-group">
@@ -180,7 +145,7 @@
                         <input type="text" name="senha" style="height:30px; " class=" col-md-10 " placeholder="C:\\Downloads\anexo.pdf" >
                       </div>
                      
-                      <button style="width: 50%;margin-left: 25%;margin-bottom: 2%;margin-top: 3%;" type="submit" class="btn btn-primary">Perguntar</button>
+                      <button style="width: 50%;margin-left: 25%;margin-bottom: 2%;margin-top: 3%;" type="submit" class="btn btn-primary">Enviar</button>
                     </form>
        </div>
     
